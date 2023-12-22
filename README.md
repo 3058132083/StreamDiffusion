@@ -121,7 +121,7 @@ python -m streamdiffusion.tools.install-tensorrt
 
 ```bash
 git clone https://github.com/cumulo-autumn/StreamDiffusion.git
-cd .\
+cd .\StreamDiffusion
 python setup.py develop easy_install streamdiffusion[tensorrt]
 python -m streamdiffusion.tools.install-tensorrt
 ```
