@@ -121,6 +121,7 @@ python -m streamdiffusion.tools.install-tensorrt
 
 ```bash
 git clone https://github.com/cumulo-autumn/StreamDiffusion.git
+cd .\
 python setup.py develop easy_install streamdiffusion[tensorrt]
 python -m streamdiffusion.tools.install-tensorrt
 ```
@@ -129,7 +130,7 @@ python -m streamdiffusion.tools.install-tensorrt
 
 ```bash
 git clone https://github.com/cumulo-autumn/StreamDiffusion.git
-cd StreamDiffusion
+cd .\StreamDiffusion\
 docker build -t stream-diffusion:latest -f Dockerfile .
 docker run --gpus all -it -v $(pwd):/home/ubuntu/streamdiffusion stream-diffusion:latest
 ```
